@@ -1,4 +1,4 @@
-module webSocketTest
+module github.com/atultw/webSocketTest
 
 go 1.16
 
