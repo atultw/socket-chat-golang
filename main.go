@@ -86,7 +86,7 @@ func handleMessages() {
 	for {
 		// when message arrives in chan
 		msg := <-channel1.Broadcast
-
+		println("howdy, received message")
 		// send to clients
 		for client := range channel1.Clients {
 			err := client.WriteJSON(msg)
